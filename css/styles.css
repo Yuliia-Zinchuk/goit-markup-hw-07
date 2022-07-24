@@ -399,7 +399,7 @@ address {
   gap: var(--distance-elements);
 }
 
-.advant-item-pict {
+.advant-list__pict {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,7 +410,7 @@ address {
   background-color: var(--secondary-bg-color);
 }
 
-.advant-item-icon {
+.advant-list__icon {
   height: 70px;
   width: 70px;
 }
