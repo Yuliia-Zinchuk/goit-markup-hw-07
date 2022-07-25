@@ -517,12 +517,12 @@ address {
   gap: 30px;
 }
 
-.clients-list-item {
+.clients-list__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-link {
+.clients-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -539,12 +539,12 @@ address {
   transition: color var(--anim), border-color var(--anim);
 }
 
-.clients-link-icon {
+.clients-link__icon {
   fill: currentColor;
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
