@@ -400,21 +400,21 @@ address {
 }
 
 /*---------- EMPLOYMENT ----------------*/
-.section-employ {
+.employment {
   padding-top: 0;
 }
 
-.employ-list {
+.employment-list {
   display: flex;
   gap: var(--distance-elements);
   margin-top: 50px;
 }
 
-.employ-list-item {
+.employment-list__item {
   position: relative;
 }
 
-.employ-list-title {
+.employment-list__title {
   position: absolute;
   width: 370px;
   height: 70px;
@@ -438,7 +438,7 @@ address {
 }
 /* job title of team */
 
-.team-title {
+.team-wrap__title {
   padding-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -446,7 +446,13 @@ address {
   line-height: 1.19;
 }
 
-.team-list-item {
+.team-wrap__text {
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+}
+
+.team-list__item {
   background-color: var(--white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -454,18 +460,12 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-text {
-  font-size: 16px;
-  line-height: 1.19;
-  margin-bottom: 16px;
-}
-
 .team-list {
   display: flex;
   gap: var(--distance-elements);
 }
 
-.team-item-wrap {
+.team-wrap {
   padding: 30px 0;
 }
 
@@ -478,12 +478,12 @@ address {
   gap: 10px;
 }
 
-.socials-item {
+.socials__item {
   width: 44px;
   height: 44px;
 }
 
-.socials-link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -498,12 +498,12 @@ address {
   transition: color var(--anim), background-color var(--anim);
 }
 
-.socials-icon {
+.socials__icon {
   fill: currentColor;
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
