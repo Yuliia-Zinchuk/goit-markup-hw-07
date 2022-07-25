@@ -206,22 +206,6 @@ address {
   height: 16px;
   fill: currentColor;
 }
-/*
-.advant-item-pict {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 270px;
-    height: 120px;
-
-    background-color: var(--secondary-bg-color);
-}
-
-.advant-item-icon {
-    height: 70px;
-    width: 70px;
-}*/
 
 /*hover and focus contact*/
 .contact .link:hover,
@@ -384,8 +368,8 @@ address {
   transform: translate(-50%, -50%);
 }
 
-/* -------------- ADVANT -------------- */
-.advant-title {
+/* -------------- FEATURE -------------- */
+.feature-title {
   margin-bottom: 10px;
   margin-top: 30px;
   color: var(--title-text-color);
@@ -394,12 +378,12 @@ address {
   text-transform: uppercase;
 }
 
-.advant-list {
+.feature-list {
   display: flex;
   gap: var(--distance-elements);
 }
 
-.advant-list__pict {
+.feature-list__pict {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,7 +394,7 @@ address {
   background-color: var(--secondary-bg-color);
 }
 
-.advant-list__icon {
+.feature-list__icon {
   height: 70px;
   width: 70px;
 }
