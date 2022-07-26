@@ -123,7 +123,7 @@ use {
 } */
 
 /* logo WebStudio */
-.logo {
+/* .logo {
   text-decoration: none;
   font-family: raleway, sans-serif;
   font-weight: 700;
@@ -135,7 +135,7 @@ use {
 
 .accent {
   color: var(--accent-color);
-}
+} */
 
 /* list without markers */
 
@@ -590,7 +590,7 @@ use {
   padding-bottom: 60px;
 }
 
-.footer__logo {
+.logo--color {
   display: block;
   color: var(--white-color);
 }
