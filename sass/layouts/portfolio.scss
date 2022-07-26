@@ -1,0 +1,78 @@
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--distance-elements);
+}
+
+.project__item {
+  background-color: var(--white-color);
+
+  transition: box-shadow var(--anim);
+}
+
+.project__link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.project-card {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.project-card__title {
+  padding-bottom: 4px;
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project__item:hover,
+.project__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* filter buttons */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.portfolio__filters {
+  margin-bottom: 50px;
+}
+
+/* portfolio-button */
+.filters__btn {
+  padding: 6px 22px;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
+}
+
+/*hover and focus button portfolio*/
+.filters__btn:hover,
+.filters__btn:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* put current button */
+.filters__btn--current {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
