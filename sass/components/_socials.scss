@@ -29,7 +29,11 @@
   fill: currentColor;
 }
 
-.socials__link:hover,
+.socials__link:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
 .socials__link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);

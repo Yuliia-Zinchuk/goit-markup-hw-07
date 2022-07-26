@@ -482,10 +482,18 @@ address {
   fill: currentColor;
 }
 
-.socials__link:hover,
+.socials__link:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
 .socials__link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .header {
@@ -805,8 +813,118 @@ address {
   fill: currentColor;
 }
 
-.clients-list__link:hover,
+.clients-list__link:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 .clients-list__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
+}
+
+.footer {
+  background-color: #2f303a;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  display: block;
+  color: var(--white-color);
+}
+
+.footer-contact__item {
+  padding-top: 9px;
+}
+
+.footer-contact__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color var(--anim);
+  transition: color var(--anim);
+}
+
+.footer-contact__address {
+  color: var(--white-color);
+}
+
+.footer-contact__link:hover,
+.footer-contact__link:focus {
+  color: var(--accent-color);
+}
+
+.footer__address {
+  padding-top: 20px;
+}
+
+.footer-contact {
+  display: block;
+  max-height: 81px;
+}
+
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-bottom: 20px;
+}
+
+.footer-socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.footer-socials__item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--white-color);
+  -webkit-transition: background-color var(--anim);
+  transition: background-color var(--anim);
+}
+
+.footer-socials__icon {
+  fill: currentColor;
+}
+
+.footer-socials__link:hover,
+.footer-socials__link:focus {
+  background-color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

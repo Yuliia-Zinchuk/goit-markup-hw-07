@@ -565,13 +565,13 @@ use {
 } */
 
 /* button pointer*/
-.pointer {
+/* .pointer {
   cursor: pointer;
-}
+} */
 
 /* --------------  FOOTER -------------- */
 /* footer contacts */
-.footer {
+/* .footer {
   background-color: #2f303a;
   text-decoration: none;
   font-style: normal;
@@ -616,11 +616,11 @@ use {
 .footer-contact {
   display: block;
   max-height: 81px;
-}
+} */
 
 /*----- footer icons--------*/
 
-.footer-title {
+/* .footer-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -663,7 +663,7 @@ use {
 .footer-socials__link:hover,
 .footer-socials__link:focus {
   background-color: var(--accent-color);
-}
+} */
 
 /* -------- PORTFOLIO --------- */
 
@@ -686,14 +686,14 @@ use {
   line-height: 1.88;
 }
 
-.card {
+.project-card {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.card__title {
+.project-card__title {
   padding-bottom: 4px;
   color: var(--title-text-color);
   font-size: 18px;

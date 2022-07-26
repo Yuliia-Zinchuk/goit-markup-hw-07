@@ -29,7 +29,11 @@
   fill: currentColor;
 }
 
-.clients-list__link:hover,
+.clients-list__link:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 .clients-list__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
