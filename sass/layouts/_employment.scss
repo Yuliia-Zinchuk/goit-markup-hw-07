@@ -1,0 +1,30 @@
+.employment {
+  padding-top: 0;
+}
+
+.employment__list {
+  display: flex;
+  gap: var(--distance-elements);
+  margin-top: 50px;
+}
+
+.employment__item {
+  position: relative;
+}
+
+.employment__title {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  padding: 27px;
+
+  background: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}

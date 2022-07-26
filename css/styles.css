@@ -372,7 +372,7 @@ use {
 }
 
 /* -------------- FEATURE -------------- */
-.feature_title {
+/* .feature_title {
   margin-bottom: 10px;
   margin-top: 30px;
   color: var(--title-text-color);
@@ -400,24 +400,24 @@ use {
 .feature-list__icon {
   height: 70px;
   width: 70px;
-}
+} */
 
 /*---------- EMPLOYMENT ----------------*/
-.employment {
+/* .employment {
   padding-top: 0;
 }
 
-.employment-list {
+.employment__list {
   display: flex;
   gap: var(--distance-elements);
   margin-top: 50px;
 }
 
-.employment-list__item {
+.employment__item {
   position: relative;
 }
 
-.employment-list__title {
+.employment__title {
   position: absolute;
   width: 370px;
   height: 70px;
@@ -432,10 +432,10 @@ use {
   text-transform: uppercase;
 
   color: var(--white-color);
-}
+} */
 
 /* ---------------  TEAM --------------*/
-.team {
+/* .team {
   background-color: var(--secondary-bg-color);
   text-align: center;
 }
@@ -454,10 +454,10 @@ use {
 
 .team-wrap {
   padding: 30px 0;
-}
+} */
 
 /* job title of team */
-.team-wrap__title {
+/* .team-wrap__title {
   padding-bottom: 10px;
   color: var(--title-text-color);
 
@@ -470,11 +470,11 @@ use {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 16px;
-}
+} */
 
 /* ---------- SOCIALS ICONS ------- */
 
-.socials {
+/* .socials {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,7 +509,7 @@ use {
 .socials__link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
-}
+} */
 
 /* -------------CLIENTS ------------- */
 

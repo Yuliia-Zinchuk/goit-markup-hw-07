@@ -1,0 +1,36 @@
+.team {
+  background-color: var(--secondary-bg-color);
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  gap: var(--distance-elements);
+}
+
+.team-list__item {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-wrap {
+  padding: 30px 0;
+}
+
+/* job title of team */
+.team-wrap__title {
+  padding-bottom: 10px;
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-wrap__text {
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+}
