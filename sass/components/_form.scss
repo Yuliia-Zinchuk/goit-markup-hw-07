@@ -1,0 +1,153 @@
+.modal__request-title {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.modal__btn:hover {
+  .modal__btn-icon {
+    fill: #2196f3;
+    transition: transform var(--anim);
+  }
+}
+
+.btn-form-modal {
+  display: block;
+  margin: 30px auto;
+}
+
+.form {
+  width: 448px;
+  margin: 75px 40px 164px;
+}
+
+.form__field {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.form__input {
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  padding: 11px 12px 11px 42px; /* это было взято из макета */
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  width: 100px;
+  height: 100px;
+
+  transition: transform var(--anim);
+}
+
+.form__input:focus + .form__input-icon {
+  fill: #2196f3;
+  transition: transform var(--anim);
+}
+
+.form__input:focus {
+  outline: 1px solid var(--accent-color);
+  border: none;
+  transition: transform var(--anim);
+}
+
+.form__input-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+
+  border: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: transparent;
+  resize: none;
+
+  transition: border-color var(--anim);
+}
+
+.form__input-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form__input-textarea:focus {
+  outline: 1px solid var(--accent-color);
+  border: none;
+  transition: transform var(--anim);
+}
+
+.form__label-checkbox {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.form__custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--black-color);
+  border-radius: 2px;
+}
+
+.form__checkbox-icon {
+  transition: opacity var(--anim);
+}
+
+.form__checkbox:checked ~ .form__custom-checkbox {
+  border: none;
+  background-color: var(--accent-color);
+}
+
+.form__checkbox-link {
+  color: var(--accent-color);
+  text-underline-position: under;
+}
+
+.subscription__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}

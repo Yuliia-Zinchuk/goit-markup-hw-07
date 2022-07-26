@@ -310,7 +310,7 @@ use {
 
 /* ------------ MODAL ------------------*/
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -351,7 +351,7 @@ use {
   transform: translate(-50%, -50%) scale(0.5);
 }
 
-.modal__btn {
+.modal-btn {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -364,12 +364,17 @@ use {
   background-color: var(--white-color);
 }
 
-.modal__btn-icon {
+.modal-btn-icon {
   color: var(--black-color);
   position: absolute;
 
   transform: translate(-50%, -50%);
+
+  .modal-btn:hover .modal-btn-icon {
+  fill: var(--accent-color);
+  transition: transform var(--anim);
 }
+} */
 
 /* -------------- FEATURE -------------- */
 /* .feature_title {
@@ -776,7 +781,7 @@ use {
 
 /* -------------- REQUEST FORM ------------------ */
 
-.modal__request-title {
+/* .modal__request-title {
   position: absolute;
   top: 40px;
   left: 40px;
@@ -788,6 +793,16 @@ use {
   color: var(--title-text-color);
 }
 
+.modal__btn:hover .modal__btn-icon {
+  fill: #2196f3;
+  transition: transform var(--anim);
+}
+
+.btn-form-modal {
+  display: block;
+  margin: 30px auto;
+} */
+/* 
 .form {
   width: 448px;
   margin: 75px 40px 164px;
@@ -812,7 +827,7 @@ use {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  padding: 11px 12px 11px 42px; /* это было взято из макета */
+  padding: 11px 12px 11px 42px; 
 
   font-size: 12px;
   line-height: 1.17;
@@ -838,11 +853,6 @@ use {
 .form__input:focus {
   outline: 1px solid var(--accent-color);
   border: none;
-  transition: transform var(--anim);
-}
-
-.modal__btn:hover .modal__btn-icon {
-  fill: #2196f3;
   transition: transform var(--anim);
 }
 
@@ -920,18 +930,11 @@ use {
   line-height: 1.25;
   letter-spacing: 0.03em;
 
-  /* padding-left: 16px; */
-
   color: rgba(255, 255, 255, 0.6);
-}
-
-.btn-form-modal {
-  display: block;
-  margin: 30px auto;
-}
+} */
 
 /* ---------- FOOTERS FORM ------------- */
-.subscription-form__input {
+/* .subscription-form__input {
   background-color: transparent;
 
   width: 358px;
@@ -949,9 +952,9 @@ use {
   display: flex;
   justify-content: center;
   gap: 12px;
-}
+} */
 
-.btn-form {
+/* .btn-form {
   width: 200px;
   height: 50px;
   background-color: var(--accent-color);
@@ -966,11 +969,11 @@ use {
   letter-spacing: 0.06em;
 
   color: var(--white-color);
-}
+} */
 
-.subscription-form__btn-send {
+/* .subscription-form__btn-send {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
+} */
