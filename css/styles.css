@@ -513,7 +513,7 @@ use {
 
 /* -------------CLIENTS ------------- */
 
-.clients-list {
+/* .clients-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -548,7 +548,7 @@ use {
 .clients-list__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
-}
+} */
 
 /* ------------- BUTTONS ----------- */
 /* .button {
