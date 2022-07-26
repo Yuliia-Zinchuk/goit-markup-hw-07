@@ -33,10 +33,10 @@
 
   padding: auto;
   margin: auto;
-}
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 }
 
 .modal-btn {
@@ -57,9 +57,9 @@
   position: absolute;
 
   transform: translate(-50%, -50%);
-}
 
-.modal-btn:hover .modal-btn-icon {
-  fill: var(--accent-color);
-  transition: transform var(--anim);
+  .modal-btn:hover & {
+    fill: var(--accent-color);
+    transition: transform var(--anim);
+  }
 }

@@ -17,6 +17,11 @@
   }
 }
 
+.modal__btn:hover .modal__btn-icon {
+  fill: #2196f3;
+  transition: transform var(--anim);
+}
+
 .btn-form-modal {
   display: block;
   margin: 30px auto;

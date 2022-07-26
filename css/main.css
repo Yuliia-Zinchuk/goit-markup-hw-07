@@ -519,7 +519,6 @@ address {
   transition: transform var(--anim);
   transition: transform var(--anim), -webkit-transform var(--anim);
 }
-
 .project__item:hover .overlay__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -562,7 +561,6 @@ address {
   padding: auto;
   margin: auto;
 }
-
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
@@ -585,7 +583,6 @@ address {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-
 .modal-btn:hover .modal-btn-icon {
   fill: var(--accent-color);
   -webkit-transition: -webkit-transform var(--anim);
@@ -604,6 +601,14 @@ address {
   line-height: 1.15;
   text-align: center;
   color: var(--title-text-color);
+}
+
+.modal__btn:hover .modal__btn-icon {
+  fill: #2196f3;
+  -webkit-transition: -webkit-transform var(--anim);
+  transition: -webkit-transform var(--anim);
+  transition: transform var(--anim);
+  transition: transform var(--anim), -webkit-transform var(--anim);
 }
 
 .modal__btn:hover .modal__btn-icon {
