@@ -5,7 +5,7 @@
 /*Цвет фона #E5E5E5 */
 /*Вторичный цвет фона  #F5F4FA; */
 /*Цвет иконок #AFB1B8 */
-
+/* 
 html {
   box-sizing: border-box;
 }
@@ -17,7 +17,7 @@ html {
 }
 
 /* Стили для обнуления верхних отступов у элементов */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -25,25 +25,25 @@ h5,
 h6,
 p {
   /*margin-top: 0;*/
-  margin: 0;
-}
+/* margin: 0;
+}  */
 
 /* Класс для обнуления базовых свойств у списков (ul) */
-.list {
+/* .list {
   list-style: none;
-  /*padding-left: 0;*/
+ 
   padding: 0;
   margin: 0;
-}
+} */
 
 /* Класс для обнуления базовых свойств у ссылок */
-.link {
+/* .link {
   text-decoration: none;
   color: inherit;
-}
+} */
 
 /* Свойства для корректного отображения картинок */
-img {
+/* img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -51,13 +51,14 @@ img {
 
 use {
   display: inline-block;
-}
-/* Свойства для обнуления курсива у address */
-address {
-  font-style: normal;
-}
+} */
 
-:root {
+/* Свойства для обнуления курсива у address */
+/* address {
+  font-style: normal;
+} */
+
+/* :root {
   --primary-text-color: #757575;
   --icons-color: #afb1b8;
   --title-text-color: #212121;
@@ -68,30 +69,9 @@ address {
   --black-color: #000000;
   --distance-elements: 30px;
   --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-#page.no-scroll {
-  overflow: hidden;
-}
-
-.list {
-  list-style: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.body {
+/* .body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
 
@@ -103,27 +83,44 @@ address {
   letter-spacing: 0.03em;
 }
 
-.container {
+#page.no-scroll {
+  overflow: hidden;
+} */
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+/* .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
+} */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 /*title of section*/
-.section-title {
+/* .section-title {
   margin-bottom: 50px;
 
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
+} */
 
 /* logo WebStudio */
 .logo {
@@ -143,20 +140,31 @@ address {
 /* list without markers */
 
 /* --------- HEADER -----------------*/
-.site-nav,
-.contact {
+/* .header {
+  border-bottom: 1px solid #ececec;
+} */
+
+/* .header-site-nav {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
 
   position: relative;
-}
-.header {
-  border-bottom: 1px solid #ececec;
-}
+} */
+
+/* .header-contact {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+
+  position: relative;
+
+  display: flex;
+  gap: 50px;
+} */
 
 /* site nav   a:link: none;*/
-.site-nav__link {
+/* .header-site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -165,16 +173,16 @@ address {
   color: var(--title-text-color);
 
   transition: color var(--anim);
-}
+} */
 
 /*hover and focus site-nav*/
-.site-nav__link:hover,
-.site-nav__link:focus {
+/* .header-site-nav__link:hover,
+.header-site-nav__link:focus {
   color: var(--accent-color);
-}
+} */
 
 /*contact - mail and phone*/
-.contact__link {
+/* .header-contact__link {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
@@ -186,47 +194,45 @@ address {
   gap: 10px;
 
   transition: color var(--anim);
-}
+} */
 
-.contact__icon-email {
+/* .header-contact__icon-email {
   width: 16px;
   height: 12px;
   fill: currentColor;
-}
+} */
 
-.contact__icon-phone {
+/* .header-contact__icon-phone {
   width: 10px;
   height: 16px;
   fill: currentColor;
-}
+} */
 
 /*hover and focus contact*/
-.contact__link:hover,
-.contact__link:focus {
+/* .header-contact__link:hover {
   color: var(--accent-color);
-}
+} */
+
+/* .header-contact__link:focus {
+  color: var(--accent-color);
+} */
 
 /* link on current page = accent color ДОДЕЛАТЬ!!!!! модификатор*/
-.site-nav__link--current {
+/* .header-site-nav__link--current {
   color: var(--accent-color);
-}
-
-.site-nav {
+} */
+/* 
+.header-site-nav {
   display: flex;
   margin-left: 93px;
   gap: 50px;
 }
 
-.contact {
-  display: flex;
-  gap: 50px;
-}
-
-.site-nav__item {
+.header-site-nav__item {
   position: relative;
 }
 
-.site-nav__link--current::after {
+.header-site-nav__link--current::after {
   position: absolute;
   content: '';
   display: block;
@@ -237,6 +243,18 @@ address {
   top: 77px;
 }
 
+.header-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
 /* margins between elements old variant */
 /*.site-nav .site-nav-item:not(:last-child) {
     margin-right: 50px;
@@ -244,13 +262,6 @@ address {
 .contact .contact-item:not(:last-child) {
     margin-right: 50px;
 }*/
-
-.page-header,
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 /* ----------- HERO ------------------ */
 .hero {
@@ -361,7 +372,7 @@ address {
 }
 
 /* -------------- FEATURE -------------- */
-.feature-title {
+.feature_title {
   margin-bottom: 10px;
   margin-top: 30px;
   color: var(--title-text-color);
@@ -540,7 +551,7 @@ address {
 }
 
 /* ------------- BUTTONS ----------- */
-.button {
+/* .button {
   display: block;
   border-radius: 4px;
   border: 0;
@@ -551,7 +562,7 @@ address {
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
-}
+} */
 
 /* button pointer*/
 .pointer {
