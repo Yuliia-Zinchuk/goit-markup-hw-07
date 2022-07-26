@@ -70,20 +70,12 @@ address {
   --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.body {
-  background-color: var(--white-color);
-  color: var(--primary-text-color);
-
-  font-family: roboto, sans-serif;
-
-  /*  font-weight: 400;*/
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 #page.no-scroll {
   overflow: hidden;
+}
+
+.list {
+  list-style: none;
 }
 
 .visually-hidden {
@@ -99,16 +91,23 @@ address {
   overflow: hidden;
 }
 
+.body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+
+  font-family: roboto, sans-serif;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-
-.color {
-  background-color: tomato;
-  outline: green;
 }
 
 .section {
@@ -128,16 +127,13 @@ address {
 
 /* logo WebStudio */
 .logo {
-  /*  padding-top: 24px;
-    padding-bottom: 25px;*/
-
   text-decoration: none;
   font-family: raleway, sans-serif;
-  color: var(--black-color);
-
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  color: var(--black-color);
 }
 
 .accent {
@@ -145,9 +141,6 @@ address {
 }
 
 /* list without markers */
-.list {
-  list-style: none;
-}
 
 /* --------- HEADER -----------------*/
 .site-nav,
@@ -163,7 +156,7 @@ address {
 }
 
 /* site nav   a:link: none;*/
-.site-nav .link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -175,13 +168,13 @@ address {
 }
 
 /*hover and focus site-nav*/
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
 
 /*contact - mail and phone*/
-.contact .link {
+.contact__link {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
@@ -195,26 +188,26 @@ address {
   transition: color var(--anim);
 }
 
-.contact-icon-email {
+.contact__icon-email {
   width: 16px;
   height: 12px;
   fill: currentColor;
 }
 
-.contact-icon-phone {
+.contact__icon-phone {
   width: 10px;
   height: 16px;
   fill: currentColor;
 }
 
 /*hover and focus contact*/
-.contact .link:hover,
-.contact .link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
-/* link on current page = accent color*/
-.site-nav .link.current {
+/* link on current page = accent color ДОДЕЛАТЬ!!!!! модификатор*/
+.site-nav__link--current {
   color: var(--accent-color);
 }
 
@@ -229,11 +222,11 @@ address {
   gap: 50px;
 }
 
-.site-nav-item {
+.site-nav__item {
   position: relative;
 }
 
-.link.current::after {
+.site-nav__link--current::after {
   position: absolute;
   content: '';
   display: block;
@@ -278,7 +271,7 @@ address {
     url('../images/hero-img.jpg');
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin: 0 auto 30px;
 
@@ -293,12 +286,11 @@ address {
 }
 
 /* hero-button */
-.hero-btn {
+.hero__btn {
   padding: 10px 32px;
   margin: 0 auto 0;
   min-width: 200px;
 
-  font-family: inherit;
   color: var(--white-color);
   background-color: var(--accent-color);
 
@@ -419,6 +411,7 @@ address {
   width: 370px;
   height: 70px;
   bottom: 0;
+  padding: 27px;
 
   background: rgba(47, 48, 58, 0.8);
 
@@ -428,7 +421,6 @@ address {
   text-transform: uppercase;
 
   color: var(--white-color);
-  padding: 27px;
 }
 
 /* ---------------  TEAM --------------*/
@@ -436,11 +428,28 @@ address {
   background-color: var(--secondary-bg-color);
   text-align: center;
 }
-/* job title of team */
 
+.team-list {
+  display: flex;
+  gap: var(--distance-elements);
+}
+
+.team-list__item {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-wrap {
+  padding: 30px 0;
+}
+
+/* job title of team */
 .team-wrap__title {
   padding-bottom: 10px;
   color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -450,23 +459,6 @@ address {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 16px;
-}
-
-.team-list__item {
-  background-color: var(--white-color);
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-list {
-  display: flex;
-  gap: var(--distance-elements);
-}
-
-.team-wrap {
-  padding: 30px 0;
 }
 
 /* ---------- SOCIALS ICONS ------- */
@@ -530,12 +522,10 @@ address {
   height: 100%;
 
   box-sizing: border-box;
-
   border: 1px solid var(--icons-color);
   border-radius: 4px;
 
   color: var(--icons-color);
-
   transition: color var(--anim), border-color var(--anim);
 }
 
@@ -584,32 +574,34 @@ address {
   padding-bottom: 60px;
 }
 
-.footer .logo {
+.footer__logo {
   display: block;
-  padding-bottom: 20px;
   color: var(--white-color);
 }
 
-.footer-link-item {
+.footer-contact__item {
   padding-top: 9px;
 }
 
-.footer-link {
+.footer-contact__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 
   transition: color var(--anim);
 }
 
-.address {
+.footer-contact__address {
   color: var(--white-color);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-contact__link:hover,
+.footer-contact__link:focus {
   color: var(--accent-color);
 }
 
+.footer__address {
+  padding-top: 20px;
+}
 .footer-contact {
   display: block;
   max-height: 81px;
@@ -617,7 +609,7 @@ address {
 
 /*----- footer icons--------*/
 
-.footer-socials-title {
+.footer-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -633,12 +625,12 @@ address {
   gap: 10px;
 }
 
-.footer-socials-item {
+.footer-socials__item {
   width: 44px;
   height: 44px;
 }
 
-.footer-socials-link {
+.footer-socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -653,12 +645,12 @@ address {
   transition: background-color var(--anim);
 }
 
-.footer-socials-icon {
+.footer-socials__icon {
   fill: currentColor;
 }
 
-.footer-socials-link:hover,
-.footer-socials-link:focus {
+.footer-socials__link:hover,
+.footer-socials__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -705,7 +697,7 @@ address {
 }
 
 /* filter buttons */
-.filter {
+.filter__list {
   margin-bottom: 50px;
 
   display: flex;
@@ -736,7 +728,7 @@ address {
 }
 
 /* put current button */
-.butcurrent {
+.filter__btn--current {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -752,15 +744,16 @@ address {
   position: absolute;
   bottom: 0;
   left: 0;
+  transform: translateY(100%);
 
+  width: 100%;
+  height: 100%;
   padding: 63px 24px;
+
   font-size: 18px;
   line-height: 1.56;
-
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
-
-  transform: translateY(100%);
   transition: transform var(--anim);
 }
 
@@ -921,7 +914,7 @@ address {
   text-underline-position: under;
 }
 
-.subscription-input::placeholder {
+.subscription__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -932,8 +925,13 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.btn-form-modal {
+  display: block;
+  margin: 30px auto;
+}
+
 /* ---------- FOOTERS FORM ------------- */
-.subscription-input {
+.subscription-form__input {
   background-color: transparent;
 
   width: 358px;
@@ -947,13 +945,13 @@ address {
   color: var(--white-color);
 }
 
-.subscription {
+.subscription-form {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
-.btn-form {
+.subscription-form__btn-form {
   width: 200px;
   height: 50px;
   background-color: var(--accent-color);
@@ -970,12 +968,7 @@ address {
   color: var(--white-color);
 }
 
-.btn-form-modal {
-  display: block;
-  margin: 30px auto;
-}
-
-.btn-send {
+.subscription-form__btn-send {
   display: flex;
   align-items: center;
   justify-content: center;
