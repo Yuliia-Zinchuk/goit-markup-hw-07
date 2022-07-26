@@ -340,7 +340,7 @@ address {
   transform: translate(-50%, -50%) scale(0.5);
 }
 
-.modal-btn {
+.modal__btn {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -353,7 +353,7 @@ address {
   background-color: var(--white-color);
 }
 
-.modal-btn-icon {
+.modal__btn-icon {
   color: var(--black-color);
   position: absolute;
 
@@ -763,7 +763,7 @@ address {
 
 /* -------------- REQUEST FORM ------------------ */
 
-.request-title {
+.modal__request-title {
   position: absolute;
   top: 40px;
   left: 40px;
@@ -780,7 +780,7 @@ address {
   margin: 75px 40px 164px;
 }
 
-.form-field {
+.form__field {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -794,7 +794,7 @@ address {
   position: relative;
 }
 
-.form-input {
+.form__input {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -806,7 +806,7 @@ address {
   letter-spacing: 0.01em;
 }
 
-.input-icon-person {
+.form__input-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -817,18 +817,18 @@ address {
   transition: transform var(--anim);
 }
 
-.form-input:focus + .input-icon-person {
+.form__input:focus + .form__input-icon {
   fill: #2196f3;
   transition: transform var(--anim);
 }
 
-.form-input:focus {
+.form__input:focus {
   outline: 1px solid var(--accent-color);
   border: none;
   transition: transform var(--anim);
 }
 
-.modal-btn:hover .modal-btn-icon {
+.modal__btn:hover .modal__btn-icon {
   fill: #2196f3;
   transition: transform var(--anim);
 }
@@ -838,13 +838,12 @@ address {
   fill: #2196f3;
 } */
 
-.form-input-textarea {
+.form__input-textarea {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
   margin-top: 4px;
 
-  /* background-color: transparent; */
   border: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -855,7 +854,7 @@ address {
   transition: border-color var(--anim);
 }
 
-.form-input-textarea::placeholder {
+.form__input-textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -864,13 +863,13 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-input-textarea:focus {
+.form__input-textarea:focus {
   outline: 1px solid var(--accent-color);
   border: none;
   transition: transform var(--anim);
 }
 
-.form-label-checkbox {
+.form__label-checkbox {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
@@ -881,7 +880,7 @@ address {
   margin-top: 20px;
 }
 
-.form-custom-checkbox {
+.form__custom-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -893,12 +892,12 @@ address {
   border-radius: 2px;
 }
 
-.form-checkbox-icon {
+.form__checkbox-icon {
   /* opacity: 0; */
   transition: opacity var(--anim);
 }
 
-.form-checkbox:checked ~ .form-custom-checkbox {
+.form__checkbox:checked ~ .form__custom-checkbox {
   border: none;
   background-color: var(--accent-color);
 
@@ -909,7 +908,7 @@ address {
   /* opacity: 1; */
 }
 
-.form-checkbox-link {
+.form__checkbox-link {
   color: var(--accent-color);
   text-underline-position: under;
 }
@@ -951,7 +950,7 @@ address {
   gap: 12px;
 }
 
-.subscription-form__btn-form {
+.btn-form {
   width: 200px;
   height: 50px;
   background-color: var(--accent-color);
