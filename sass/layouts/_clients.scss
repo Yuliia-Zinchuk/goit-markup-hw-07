@@ -3,11 +3,17 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-}
 
-.clients-list__item {
-  width: 170px;
-  height: 92px;
+  &__item {
+    width: 170px;
+    height: 92px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
 .clients-list__link {
@@ -27,14 +33,4 @@
 
 .clients-link__icon {
   fill: currentColor;
-}
-
-.clients-list__link:hover {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}
-
-.clients-list__link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
 }

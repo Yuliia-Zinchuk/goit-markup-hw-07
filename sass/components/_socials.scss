@@ -3,11 +3,15 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
 
-.socials__item {
-  width: 44px;
-  height: 44px;
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
 }
 
 .socials__link {
@@ -23,18 +27,10 @@
   color: var(--icons-color);
 
   transition: color var(--anim), background-color var(--anim);
-}
 
-.socials__icon {
-  fill: currentColor;
-}
-
-.socials__link:hover {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-}
-
-.socials__link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
 }
